@@ -22,9 +22,11 @@ const MainContainer = styled.main`
 
 padding-top: 70px;
 margin: 0 10px;
+
 .top-section{
 display: flex;
 justify-content: space-between;
 align-items: end;
 }
+
 `;
