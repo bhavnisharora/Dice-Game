@@ -1,19 +1,16 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-const RoleDice = () => {
+const RoleDice = ({ currentDice, roleDice }) => {
 
-    const [currentDice, setCurrentDice] = useState();
 
-    const generateRandomNumber = (min, max) => {
-        return Math.floor(Math.random() * (max - min) + min);
-    };
+
     return (
         <DiceContainer>
             <div className='dice'
-                onClick={() => generateRandomNumber(1, 7)}
+                onClick={roleDice}
             >
-                <img src="/images/dices/dice_1.png" alt="dice 1" />
+                <img src={`/images/dices/dice_${currentDice}.png`} alt="dice 1" />
             </div>
             <p>Click on Dice to Roll</p>
         </DiceContainer>
