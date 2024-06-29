@@ -28,7 +28,7 @@ const Container = styled.div
     flex-direction: column;
 }   
 
-     img {
+     img{
         max-width: 100%;
         height: auto;
     }

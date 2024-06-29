@@ -57,4 +57,10 @@ font-size: 24px;
 font-weight: 700;
 background-color: ${props => props.isSelected ? 'black' : 'white'};
 color: ${props => !props.isSelected ? 'black' : 'white'};
+
+@media (max-width: 768px) {
+height: 42px;
+width: 42px;
+margin-bottom: 30px;
+}
 `;

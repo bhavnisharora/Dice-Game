@@ -76,10 +76,14 @@ margin: 0 10px;
 display: flex;
 justify-content: space-between;
 align-items: end;
+
+@media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+}
 }
 .btns{
     margin-top: 40px;
-    gap: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
